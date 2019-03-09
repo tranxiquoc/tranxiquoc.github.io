@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Design</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/site.css">
+	<link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+	
+	<script>
+		function checkLogin()
+		{
+			if(f1.txtName.value =="")
+			{
+				alert('Input name');
+				f1.txtName.focus;
+				return;
+			}
+			
+			var testEmail = /\w\b@\w/;
+			if(testEmail.test(f1.txtEmail.value) == false)
+			{
+				alert('Email invalid');
+				f1.txtEmail.focus();
+				return;
+			}
+			if(f1.txtAddress.value =="")
+			{
+				alert('Input Address');
+				f1.txtAddress.focus();
+				return;
+			}
+			if(f1.txtPhone.value =="")
+			{
+				alert('Input Phone');
+				f1.txtPhone.focus;
+				return;
+			}
+			if(f1.txtQuantity.value =="")
+			{
+				alert('Input Quantity');
+				f1.txtQuantity.focus;
+				return;
+			}
+			if(f1.txtCmt.value =="")
+			{
+				alert('Input Feedback');
+				f1.txtCmt.focus();
+				return;
+			}
+			else
+				{
+					alert('Feedback sent, thank for your honesty!')
+					location="Index.HTML"
+				}
+		}
+	</script>
+
+<body>
+	<div id="menu" class="shadow">
+		<a href="Home.HTML">Home</a>
+		<a href="Registration.html">Registration</a>
+		<a href="FeedBack.html">Feedback</a>
+		<a href="#footer">Contact</a>
+		<a href="Login.html">Login</a>
+	<div><input type="search"  id="search" value="search" style="padding-top: 7px"></div>
+</div>
+<div id="head-link" align="center"> 
+	<div id="slider">
+	<figure>
+	<img alt="" src="../Image/SLIDER1.jpg" height="288">
+	<img alt="" src="../Image/SLIDER2.jpg" height="288">
+	</figure>
+	</div>
+	</div>
+<div id="title" align="center">
+  <h1 align="center">ATN TOY STORE</h1>
+</div>
+	<div id="main">
+		
+	<form name="f1">
+		<fieldset>
+		<table border="1" cellpadding="1" cellspacing="1" align="center" class="table">
+		
+			<tr>
+			<th colspan="2" align="center">Buying Form </th>
+			</tr>
+			<tr>
+			
+				<td>Full name</td>
+				<td><input type="text" placeholder="Input your name" name="txtName"></td>
+			</tr>
+
+			<tr>
+				<td>Email</td>
+				<td><input type="email" name="txtEmail"></td>
+			</tr>
+			<tr>
+				<td>Addres</td>
+				<td><textarea placeholder="Input your location" name="txtAddress"></textarea></td>
+			</tr>
+			<tr>
+				<td>Phone</td>
+				<td><input type="text" name="txtPhone"></td>
+			</tr>
+			<tr>
+			  <td>Quantity<div><img alt="" src="../Image/vans white.jpeg" width="120" height="100"></div></td>
+				<td><input type="number" name="txtQuantity"></td>
+			</tr>
+			<tr>
+				<td>Note</td>
+				<td><textarea name="txtCmt"></textarea></td>
+			</tr>
+			<tr>
+			<td></td>
+			<td><input type="button" value="Submit" onClick="checkLogin()"/>
+				<input type="reset" value="Reset" onClick="checkReset()"/>
+			</td>
+				
+			</tr>
+			</table>
+		</fieldset>
+	
+	</form>
+	</div>
+	
+	<div id="footer" align="center">
+		<h3>Contact us</h3>
+		<p>Tòa nhà SOLE STATION</p>
+	    <p>Sài Gòn</p>
+		<p>299/2/29 Lý Thường Kiệt</p>
+		<p>Việt Nam</p>
+		<p>Phone: +84 935.166.402</p>  
+	</div>
+
+</body>
+</html>

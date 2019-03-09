@@ -1,0 +1,35 @@
+/* CSS Document */
+body {margin: 0}
+#menu {background: indianred;
+		color: white;
+		width: 25%;
+		height: 50px;
+		top: 0;
+		margin: 0;
+}
+#menu a{
+	float: left;
+	display: block;
+	color: #CDBEBE;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+#menu a:hover{
+	background:#CDBEBE;
+	color: indianred;
+	
+}
+
+#main{
+	height: 45%;
+	margin-top: 50px;
+	float: left;
+	margin:0 2.5%;
+}
+
+#footer{
+	height: 200px;
+	background: indianred;
+	color: #CDBEBE;
+	
+}
